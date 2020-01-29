@@ -1,0 +1,55 @@
+{% extends "layoutAdmin.njk" %}
+
+{% block head %}
+    <title>Criando Receita</title>
+{% endblock %}
+
+{% block content %}
+    <div class="cardCreate">
+        <section 
+            style="background: url({{items.receita_url}}) no-repeat center center/ cover">
+        </section>
+
+        <section class="details">
+            <h3>Detalhes</h3>
+
+            <div class="item">
+                <div>Nome</div>
+                <div class="infoDetails">{{items.name}}</div>
+            </div>
+
+            <div class="item">
+                <div>Criador</div>
+                <div class="infoDetails">{{items.criador_name}}</div>
+            </div>
+
+            <div class="item">
+                <div>Ingredientes</div>
+                <div class="infoDetails">
+                    {% for ingrediente in items.ingredientes %}
+                        <li>{{ ingrediente }}</li>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div class="item">
+                <div>Modo de preparo</div>
+                <div class="infoDetails">
+                    {% for modePreparatio in items.modePreparation %}
+                        <li>{{ modePreparatio }}</li>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div class="item">
+                <div>Informações Extras</div>
+                <div class="infoDetails">{{items.information}}</div>
+            </div>
+
+            <a href="/admin/receita/{{items.id}}/edit" class="buttonEdite">Editar</a>
+
+        </section>
+    </div>
+
+    <script src="/scripts.js"></script>
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends "layout.njk" %}
+    
+{% block content %}
+
+    <div class="banner">
+        <div class="textBanner">
+            <h1>As melhores receitas</h1>
+            <h4>Aprenda a construir os melhores pratos com receitas criadas por profissionais do mundo inteiro.</h4>
+        </div>
+            
+        <img src=".././assests/chef.png" alt="chef">
+    </div>
+
+    <h2>Mais acessadas</h2>
+
+    <section class="cards">
+        {% for item in items %}
+        <div class="card" id="{{item.id}}">
+            <div class="card__image-container">
+                <img src="{{item.receita_url}}" alt="Imagem do {{item.receita_url}}">
+            </div>
+            <div class="card__info">
+                <p class="titulo">{{item.name}}</p>
+                <p class="card_info_creator">por {{item.criador_name}}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </section>
+
+    <div class="alignFooter">
+        <div class="footer">
+            <p>Todos direitos reservados, receitas Foodfy.</p>
+        </div>
+    </div>
+
+    <script src="/scripts.js"></script>
+
+{% endblock %}

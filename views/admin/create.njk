@@ -1,0 +1,91 @@
+{% extends "layoutAdmin.njk" %}
+
+{% block head %}
+    <title>Criando Receita</title>
+{% endblock %}
+
+{% block content %}
+    <form class="cardCreate" action="/admin/receitas" method="post">
+        <section 
+            style="background: url(https://source.unsplash.com/collection/345760/800x500) no-repeat center center/ cover">
+        </section>
+
+        <section class="details">
+            <h3>Nova Receita</h3>
+
+            <div class="item">
+                <div>Receita URL</div>
+                <div>
+                    <input 
+                        type="url" 
+                        name="receita_url"
+                        placeholder="http://"
+                        value=""
+                    >
+                </div>
+            </div>
+
+            <div class="item">
+                <div>Nome</div>
+                <div>
+                    <input 
+                        type="text" 
+                        name="name"
+                        value=""
+                    >
+                </div>
+            </div>
+
+            <div class="item">
+                <div>Criador</div>
+                <div>
+                    <input 
+                        type="text" 
+                        name="criador_name"
+                        value=""
+                    >
+                </div>
+            </div>
+
+            <div class="item" id="ingredients">
+                <div>Ingredientes</div>
+                    <div class="ingredient">
+                        <input 
+                            type="text" 
+                            name="ingredientes[]"
+                            value=""
+                        >
+                    </div>
+            </div>
+            <button type="button" class="add-ingredient" onclick="addIngredient()">Adicionar Ingrediente</button>
+
+            <div class="item" id="modesPreparation">
+                <div>Modo de preparo</div>
+                    <div class="modePreparationTwo">
+                        <input 
+                            type="text" 
+                            name="modePreparation[]"
+                            value=""
+                        >
+                    </div>
+            </div>
+            <button type="button" class="add-ingredient" onclick="modePreparation()">Adicionar Modo de Preparo</button>
+
+            <div class="item">
+                <div>Informações Extras</div>
+                <div>
+                    <input 
+                        type="text" 
+                        name="information"
+                        value=""
+                    >
+                </div>
+            </div>
+
+            <button type="submit">Salvar</button>
+            
+        </section>
+    </form>
+
+    <script src="/scripts.js"></script>
+{% endblock %}

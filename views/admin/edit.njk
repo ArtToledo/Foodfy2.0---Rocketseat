@@ -1,0 +1,106 @@
+{% extends "layoutAdmin.njk" %}
+
+{% block head %}
+    <title>Editar Receita</title>
+{% endblock %}
+
+{% block content %}
+<div class="cardCreate">
+
+    <section 
+        style="background: url({{items.receita_url}}) no-repeat center center/ cover">
+    </section>
+
+    <section class="details">
+        <form action="/admin/receita?_method=PUT" method="POST">
+        
+            <h3>Editar Receita</h3>
+
+            <div class="item">
+                <div>Receita URL</div>
+                <div>
+                    <input 
+                        type="url" 
+                        name="receita_url"
+                        placeholder="http://"
+                        value="{{items.receita_url}}"
+                    >
+                </div>
+            </div>
+
+            <div class="item">
+                <div>Nome</div>
+                <div>
+                    <input 
+                        type="text" 
+                        name="name"
+                        value="{{items.name}}"
+                    >
+                </div>
+            </div>
+
+            <div class="item">
+                <div>Criador</div>
+                <div>
+                    <input 
+                        type="text" 
+                        name="criador_name"
+                        value="{{items.criador_name}}"
+                    >
+                </div>
+            </div>
+
+            <div class="item" id="ingredients">
+                <div>Ingredientes</div>
+                {% for ingrediente in items.ingredientes %}
+                    <div class="ingredient">
+                        <input 
+                            type="text" 
+                            name="ingredientes[]"
+                            value="{{ingrediente}}"
+                        >
+                    </div>
+                {% endfor %}
+            </div>
+            <button type="button" class="add-ingredient" onclick="addIngredient()">Adicionar Ingrediente</button>
+
+            <div class="item" id="modesPreparation">
+                <div>Modo de preparo</div>
+                {% for modePreparatio in items.modePreparation %}
+                    <div class="modePreparationTwo">
+                        <input 
+                            type="text" 
+                            name="modePreparation[]"
+                            value="{{modePreparatio}}"
+                        >
+                    </div>
+                {% endfor %}
+            </div>
+            <button type="button" class="add-ingredient" onclick="modePreparation()">Adicionar Modo de Preparo</button>
+
+            <div class="item">
+                <div>Informações Extras</div>
+                <div>
+                    <input 
+                        type="text" 
+                        name="information"
+                        value="{{items.information}}"
+                    >
+                </div>
+            </div>
+
+            <button type="submit">Salvar</button>
+            <input type="hidden" name="id" value={{items.id}}>
+
+        </form>
+
+        <form id="form-delete" action="/admin/receita?_method=DELETE" method="POST">
+            <input type="hidden" name="id" value={{items.id}}>
+            <button type="submit">Deletar</button>
+        </form>
+    </section>
+
+</div>
+
+    <script src="/scripts.js"></script>
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>Receita - {{receita.name}}</title>
+{% endblock %}
+
+{% block content %}
+    <div class="bannerRecipe">
+        <img src="{{receita.receita_url}}" width="940px" height="280px" alt="receita de {{receita.name}}">
+    </div>
+
+    <div class="infoText">
+        <p class="textTileRecipe">{{receita.name}}</h2>
+        <p class="textAuthorRecipe">{{receita.criador_name}}</p>
+    </div>
+
+    <div class="ingredientes">
+        <p>Ingredientes<button type="button">Esconder</button></p>
+        <div class="ingredientesVisible">
+            {% for ingredient in receita.ingredientes %}
+                <li>{{ingredient}}</li>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="modePreparation">
+        <p>Modo de Preparo<button type="button">Esconder</button></p>
+        <div class="modePreparationVisible">
+            {% for modePreparation in receita.modePreparation %}
+                <li>{{modePreparation}}</li>
+            {% endfor %}
+        </div>
+    </div>
+    
+    <div class="extraInformation">
+        <p>Informações adicionais<button type="button">Esconder</button></p>
+        <div class="extraInformationVisible">
+            <p>{{receita.information}}</p>
+        </div>
+    </div>
+   
+
+    <div class="footer">
+        <p>Todos direitos reservados, receitas Foodfy.</p>
+    </div>
+
+    <script src="/scripts.js"></script>
+{% endblock %}

@@ -1,0 +1,93 @@
+{
+  "receitas": [
+    {
+      "id": 1,
+      "receita_url": "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=653&q=80",
+      "name": "Ovos a mesa",
+      "criador_name": "Jorge Paul Lemon",
+      "ingredientes": [
+        "3 Ovos",
+        "Salsinha",
+        "Sal"
+      ],
+      "modePreparation": [
+        "Cozinhe os ovos a 150 graus",
+        "Pique a salsinha e coloque sal"
+      ],
+      "information": "Não lave o macarrão nem passe óleo ou gordura nele depois de escorrê-lo. Coloque direto na frigideira."
+    },
+    {
+      "id": 2,
+      "receita_url": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/burger.png",
+      "name": "Triplo bacon burger",
+      "criador_name": "Jorge Relato",
+      "ingredientes": [
+        "3 kg de carne moída (escolha uma carne magra e macia",
+        "300 g de bacon moído",
+        "1 ovo",
+        "3 colheres (sopa) de farinha de trigo",
+        "3 colheres (sopa) de tempero caseiro: feito com alho, sal, cebola, pimenta e cheiro verde processados no liquidificador",
+        "30 ml de água gelada",
+        "5 gramas de arroz"
+      ],
+      "modePreparation": [
+        "Misture todos os ingredientes muito bem e amasse para que fique tudo muito bem misturado.",
+        "Faça porções de 90 g a 100 g.",
+        "Forre um plástico molhado em uma bancada e modele os hambúrgueres utilizando um aro como base."
+      ],
+      "information": "Não lave o macarrão nem passe óleo ou gordura nele depois de escorrê-lo. Coloque direto na frigideira."
+    },
+    {
+      "id": 3,
+      "receita_url": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/pizza.png",
+      "name": "Pizza 4 estações",
+      "criador_name": "Fabiana Melo Tete",
+      "ingredientes": [
+        "1 xícara (chá) de leite",
+        "1 ovo",
+        "1 colher (chá) de sal",
+        "1 colher (chá) de açúcar"
+      ],
+      "modePreparation": [
+        "No liquidificador bata o leite, o ovo, o sal, o açúcar, a margarina, a farinha de trigo e o fermento em pó até que tudo esteja encorporado.",
+        "Despeje a massa em uma assadeira para pizza untada com margarina e leve ao forno preaquecido por 20 minutos.",
+        "Leve novamente ao forno até derreter a mussarela."
+      ],
+      "information": "Não lave o macarrão nem passe óleo ou gordura nele depois de escorrê-lo. Coloque direto na frigideira."
+    },
+    {
+      "id": 4,
+      "receita_url": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/lasanha.png",
+      "name": "Lasanha mac n' cheese",
+      "criador_name": "Juliano Vieira",
+      "ingredientes": [
+        "massa pronta de lasanha",
+        "400 g de presunto",
+        "400 g de mussarela ralada",
+        "2 copos de requeijão",
+        "150 g de mussarela para gratinar"
+      ],
+      "modePreparation": [
+        "Em uma panela, coloque a manteiga para derreter.",
+        "Acrescente a farinha de trigo e misture bem com auxílio de um fouet.",
+        "Desligue o fogo e acrescente o creme de leite; misture bem e reserve."
+      ],
+      "information": "Lasanha é tanto um tipo de massa em folhas, como também um prato, por vezes chamado lasanha ao forno, feito com camadas alternadas de massa, queijo e molho de carne."
+    },
+    {
+      "id": 5,
+      "receita_url": "https://images.unsplash.com/photo-1565060299509-453c4f3bc905?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=633&q=80",
+      "name": "Hamburguer de Siri",
+      "criador_name": "Arthur Toledo Neto",
+      "ingredientes": [
+        "Hamburguer",
+        "Pao com Gergilim"
+      ],
+      "modePreparation": [
+        "tira da agua",
+        "coloca agua"
+      ],
+      "information": "Não lave o macarrão nem passe óleo ou gordura nele depois de escorrê-lo. Coloque direto na frigideira."
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 # Foodfy2.0---Rocketseat
-Aprimoramento do site de receitas através dos novos conceitos e funcionalidades aprendidas
+### Aprimoramento do site de receitas através dos novos conceitos e funcionalidades aprendidas
 
 -> Linguagens utilizadas: HTML, JavaScript e CSS
 
@@ -24,3 +24,6 @@ Aprimoramento do site de receitas através dos novos conceitos e funcionalidades
      Metódos GET, POST, PUT, DELETE para adicionar, remover e editar as receitas criadas na página de admin;
      
      "Escrever" dados em arquivo .json para exibir os mesmos de forma dinâmica no site do projeto, etc.
+
+clique na imagem abaixo para ver o vídeo de apresentação:
+[![Vídeo de apresentação do projeto](http://img.youtube.com/vi/CuLeKWW0RJw/0.jpg)](http://www.youtube.com/watch?v=CuLeKWW0RJw "Vídeo de apresentação do projeto")

@@ -1,4 +1,4 @@
-# Foodfy2.0---Rocketseat
+# Foodfy2.0 - Curso LaunchBase Rocketseat
 ### Aprimoramento do site de receitas através dos novos conceitos e funcionalidades aprendidas
 
 -> Linguagens utilizadas: HTML, JavaScript e CSS
